@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
+    <!-- fontawesome  -->
+    <script
+      src="https://kit.fontawesome.com/412c671735.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- DaisyUl CDN  -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
@@ -36,6 +41,130 @@
     </script>
   </head>
   <body class="font-sora">
-    <h1 class="">Nature's Platter</h1>
+    <!-- header section start  -->
+    <header class="bg-gradient-to-b from-white to-[#EFEBE3]">
+      <!-- nav section start  -->
+      <nav class="">
+        <div class="navbar w-11/12 lg:w-4/5 mx-auto">
+          <div class="navbar-start">
+            <img src="./c2-assets/logo-header.png" alt="" />
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal text-xl">
+              <li><a>Product</a></li>
+              <li><a>Services</a></li>
+              <li><a>Contact us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <div class="dropdown">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-ghost lg:hidden text-[30px]"
+              >
+                <a href=""><i class="fa-solid fa-bars"></i></a>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 p-2"
+              >
+                <li><a>Product</a></li>
+                <li><a>Services</a></li>
+                <li><a>Contact us</a></li>
+              </ul>
+            </div>
+            <div class="hidden lg:flex items-center gap-5">
+              <a href=""><i class="fa-solid fa-bell"></i></a>
+              <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              <button
+                class="border-solid border-2 border-indigo-200 rounded py-2 px-4 text-xl"
+                type="button"
+              >
+                Login
+              </button>
+              <button
+                class="rounded bg-primary-bg py-2 px-6 text-xl text-white"
+                type="button"
+              >
+                Register
+              </button>
+            </div>
+          </div>
+        </div>
+        <hr class="lg:hidden border-gray-800 dark:border-white" />
+      </nav>
+      <!-- banner section start  -->
+      <div class="w-11/12 lg:w-4/5 mx-auto flex flex-col items-center mt-10">
+        <h1 class="text-center text-4xl my-5">
+          Freshness
+          <span class="text-primary-bg"
+            >You Can <br />
+            Count</span
+          >
+          On, Prices You’ll Love!
+        </h1>
+        <p class="w-3/6 text-center">
+          Shop your daily essentials at unbeatable prices. From fresh produce to
+          pantry staples, we’ve got you covered every day!
+        </p>
+        <div class="w-3/6 text-center mt-5">
+          <img src="./c2-assets/hero-vegetables.png" alt="" />
+        </div>
+      </div>
+    </header>
+    <!-- main section start  -->
+    <main>
+      <!-- Services section start  -->
+      <section class="my-12 w-11/12 lg:w-4/5 mx-auto">
+        <h2 class="text-primary-bg text-2xl font-bold my-5">Services</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+          <div class="bg-secondary-bg rounded-md p-10">
+            <div class="flex flex-col justify-center items-center">
+              <div class="avatar">
+                <div class="rounded-full bg-white p-10">
+                  <img src="./c2-assets/service.png" />
+                </div>
+              </div>
+              <h3 class="text-xl font-bold py-3 text-center">24/7 Services</h3>
+              <p class="text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt
+              </p>
+            </div>
+          </div>
+          <div class="bg-secondary-bg rounded-md p-10">
+            <div class="flex flex-col justify-center items-center">
+              <div class="avatar">
+                <div class="rounded-full bg-white p-10">
+                  <img src="./c2-assets/delivery.png" />
+                </div>
+              </div>
+              <h3 class="text-xl font-bold py-3 text-center">Fast Delivery</h3>
+              <p class="text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt
+              </p>
+            </div>
+          </div>
+          <div class="bg-secondary-bg rounded-md p-10">
+            <div class="flex flex-col justify-center items-center">
+              <div class="avatar">
+                <div class="rounded-full bg-white p-10">
+                  <img src="./c2-assets/healthy.png" />
+                </div>
+              </div>
+              <h3 class="text-xl font-bold py-3 text-center">
+                Healthy Products
+              </h3>
+              <p class="text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
